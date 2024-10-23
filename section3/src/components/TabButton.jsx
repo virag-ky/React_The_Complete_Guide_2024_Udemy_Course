@@ -1,11 +1,7 @@
-function TabButton({ children }) {
-  function handleClick() {
-    console.log("Hello World");
-  }
-
+function TabButton({ children, onClick }) {
   return (
     <li>
-      <button onClick={handleClick}>{children}</button>
+      <button onClick={onClick}>{children}</button>
     </li>
   );
 }
